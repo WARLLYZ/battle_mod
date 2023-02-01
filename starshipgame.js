@@ -10,6 +10,8 @@ let enemyShip6Health = 5;
 //set current target enemy ship
 let currentTarget = 1;
 
+
+
 //event listener on main ship image
 document.getElementById("my-ship").addEventListener("click", function() {
   //check if main ship is still alive
@@ -24,6 +26,7 @@ document.getElementById("my-ship").addEventListener("click", function() {
           enemyShip1Health -= 5;
           document.getElementById("enemy-ship1-hp").innerHTML = enemyShip1Health;
           if (enemyShip1Health <= 0) {
+          
             currentTarget++;
           }
           break;
@@ -82,16 +85,8 @@ document.getElementById("my-ship").addEventListener("click", function() {
   }
 });
 
-//reset game function
 const resetButton = document.getElementById("reset-button");
-resetButton.addEventListener("click", resetGame);
+resetButton.addEventListener("click", function() {
+  location.reload();
+});
 
-function resetGame() {
-  document.getElementById("my-ship-hull").innerText = "20";
-  document.getElementById("enemy-ship1-hp").innerText = "5";
-  document.getElementById("enemy-ship2-hp").innerText = "5";
-  document.getElementById("enemy-ship3-hp").innerText = "5";
-  document.getElementById("enemy-ship4-hp").innerText = "5";
-  document.getElementById("enemy-ship5-hp").innerText = "5";
-  document.getElementById("enemy-ship6-hp").innerText = "5";
-}
