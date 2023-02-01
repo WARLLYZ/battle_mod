@@ -11,8 +11,10 @@
     flex-wrap: wrap;
     justify-content: center;
     font-size: larger;
-    color: rgb(216, 20, 128);
-    font-weight: 100;
+    color: rgb(18, 201, 27);
+    font-size: 25px;
+    font-style: bold;
+    font-weight: 500;
 }
 body{
 
@@ -26,11 +28,17 @@ body{
     background-color: rgb(161, 214, 15);
 
 }
-#enemy-ship1-hp{
+#my-ship-container {
+    display: inline-block;
+    position: relative;
+  }
 
-    font-size: 50;
-}
-p{
-
-    font-size: 20;
-}
+  #my-ship-hull {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(19, 176, 238);
+    font-size: 25px;
+    font-style: bold;
+    font-weight: 500;
+  }

@@ -83,11 +83,15 @@ document.getElementById("my-ship").addEventListener("click", function() {
 });
 
 //reset game function
+const resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", resetGame);
+
 function resetGame() {
-  mainShipHealth = 20;
-  enemyShip1Health = 5;
-  enemyShip2Health = 5;
-  enemyShip3Health = 5;
-  enemyShip4Health = 5;
-  enemyShip5Health = 5;
-  enemyShip6Health = 5;}
+  document.getElementById("my-ship-hull").innerText = "20";
+  document.getElementById("enemy-ship1-hp").innerText = "5";
+  document.getElementById("enemy-ship2-hp").innerText = "5";
+  document.getElementById("enemy-ship3-hp").innerText = "5";
+  document.getElementById("enemy-ship4-hp").innerText = "5";
+  document.getElementById("enemy-ship5-hp").innerText = "5";
+  document.getElementById("enemy-ship6-hp").innerText = "5";
+}
