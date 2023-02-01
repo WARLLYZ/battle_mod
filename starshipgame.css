@@ -1,0 +1,36 @@
+
+.enemyPic{
+
+    width: 25%;
+    height: 30%
+    
+}
+.enemyPlayers{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: larger;
+    color: rgb(216, 20, 128);
+    font-weight: 100;
+}
+body{
+
+    display: flex;
+    flex-flow: row;
+    background-image: url("./galaxy.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reset-button{
+    background-color: rgb(161, 214, 15);
+
+}
+#enemy-ship1-hp{
+
+    font-size: 50;
+}
+p{
+
+    font-size: 20;
+}
